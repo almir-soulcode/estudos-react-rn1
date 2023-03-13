@@ -1,6 +1,9 @@
 // Trazer de outro arquivo/biblioteca alguma função ou variável
 import { createRoot } from "react-dom/client";
+import { Blog } from "./components/Blog";
+import { Footer } from "./components/Footer";
 import { Mensagem } from "./components/Mensagem";
+import { Postagem } from "./components/Postagem";
 import { Titulo } from "./components/Titulo";
 
 // Linka o arquivo css ao projeto React
@@ -17,6 +20,12 @@ root.render(
   <div>
     <Titulo></Titulo>
     <Mensagem></Mensagem>
+    <hr />
+    <Postagem></Postagem>
+    <hr />
+    <Blog></Blog>
+    <hr/>
+    <Footer></Footer>
   </div>
 );
 
