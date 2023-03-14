@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Mensagem } from "./components/Mensagem/Mensagem";
 import { Postagem } from "./components/Postagem/Postagem";
 import { Titulo } from "./components/Titulo/Titulo";
-import { Musics } from "./components/Musics/Musics";
+import { ListMusic } from "./components/ListMusic/ListMusic";
 import { Task } from "./components/Task/Task";
 
 // Linka o arquivo css ao projeto React
@@ -28,7 +28,7 @@ root.render(
     <Blog></Blog>
     <hr/>
     <Footer></Footer> */}
-    <Musics />
+    <ListMusic />
     <Task title="Beber água" status="Feito" deadline="14/03/2023 12:00" />
     <Task title="Marcar reunião" status="Pendente" deadline="31/03/2023 10:00" />
     <Task title="Correr" status="Atrasado" deadline="02/03/2023 6:00" />
