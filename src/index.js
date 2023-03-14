@@ -28,10 +28,17 @@ root.render(
     <Blog></Blog>
     <hr/>
     <Footer></Footer> */}
+    <Titulo corBorda="#FF0000" corFundo="#FF000022">Musicas</Titulo>
     <ListMusic />
+
+    <Titulo corBorda="#00FF00" corFundo="#00FF0022">Tarefas</Titulo>
     <Task title="Beber água" status="Feito" deadline="14/03/2023 12:00" />
     <Task title="Marcar reunião" status="Pendente" deadline="31/03/2023 10:00" />
     <Task title="Correr" status="Atrasado" deadline="02/03/2023 6:00" />
+
+    <Titulo>
+      React é uma biblioteca para criação de interfaces visuais web.
+    </Titulo>
   </div>
 );
 

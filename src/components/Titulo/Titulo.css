@@ -1,0 +1,11 @@
+.titulo {
+    color: black !important;
+    text-align: left;
+    margin: 10px 20px;
+    padding: 5px;
+    font-size: 30px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: blue;
+    background-color: #0000FF22;
+}
