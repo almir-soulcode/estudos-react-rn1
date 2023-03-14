@@ -1,4 +1,4 @@
-import { Postagem } from "./Postagem";
+import { Postagem } from "../Postagem/Postagem";
 
 export function Blog() {
   return (
