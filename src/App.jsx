@@ -1,3 +1,4 @@
+import { ChecarNumero } from "./components/ChecarNumero/ChecarNumero";
 import { ListaAlunos } from "./components/ListaAlunos/ListaAlunos";
 import { ListaCompras } from "./components/ListaCompras/ListaCompras";
 import { ListaFuncionarios } from "./components/ListaFuncionarios/ListaFuncionarios";
@@ -10,7 +11,9 @@ export function App() {
       {/* <ListaFuncionarios /> */}
       {/* <NavBar logado={true} nomeUsuario="José" /> */}
       {/* <NavBar logado={false} /> */}
-      <ListaAlunos />
+      {/* <ListaAlunos /> */}
+      <ChecarNumero numero={5}/>
+      <ChecarNumero numero={4}/>
     </>
   );
 }
