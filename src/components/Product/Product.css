@@ -1,0 +1,19 @@
+.product {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(33, 27, 47);
+    display: inline-block;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h3,
+.product span,
+.product strong {
+    display: block;
+    text-align: center;
+    color: white;
+}
