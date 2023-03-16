@@ -1,11 +1,12 @@
-import { Contador } from "./components/Contador/Contador";
+import { Cadastro } from "./components/Cadastro/Cadastro";
 
 export function App() {
   return (
     <>
       {/* <ProductList /> */}
       {/* <Quadrado /> */}
-      <Contador />
+      {/* <Contador /> */}
+      <Cadastro />
     </>
   );
 }
