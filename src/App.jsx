@@ -1,9 +1,10 @@
-import { ProductList } from "./components/ProductList/ProductList";
+import { Quadrado } from "./components/Quadrado/Quadrado";
 
 export function App() {
   return (
     <>
-      <ProductList />
+      {/* <ProductList /> */}
+      <Quadrado />
     </>
   );
 }
