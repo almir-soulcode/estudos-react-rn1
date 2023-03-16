@@ -1,0 +1,11 @@
+.contador {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contador div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
