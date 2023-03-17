@@ -9,6 +9,7 @@ const pergunta = {
 
 export function QuestaoQuiz() {
   const [statusQuiz, setStatusQuiz] = useState("pendente");
+  const [chances, setChances] = useState(2);
   // pendente = precisa marcar uma alternativa
   // acertou = marcou a alternativa correta
   // errou = marcou a alternativa errada
@@ -18,6 +19,7 @@ export function QuestaoQuiz() {
       // A interface irá mostrar o feedback de que acertou
       setStatusQuiz("acertou");
     } else {
+      setChances(chances - 1);
       setStatusQuiz("errou");
     }
   }
@@ -25,13 +27,18 @@ export function QuestaoQuiz() {
   function tentarNovamente() {
     // voltar para pendente, indica para a interface atualizar
     // e mostrar a pergunta novamente
-    setStatusQuiz("pendente");
+    if (chances > 0) {
+      setStatusQuiz("pendente");
+    } else {
+      setStatusQuiz("acabou");
+    }
   }
 
   if (statusQuiz === "pendente") {
     return (
       <div>
         <h3>{pergunta.enunciado}</h3>
+        <small>Tentativas restantes: {chances}</small>
         <ol type="A">
           {pergunta.alternativas.map((elemento) => (
             <li
@@ -56,6 +63,13 @@ export function QuestaoQuiz() {
       <div>
         <h3>Você errou. Mas pode tentar novamente.</h3>
         <button onClick={tentarNovamente}>Tentar novamente</button>
+      </div>
+    );
+  } else if (statusQuiz === "acabou") {
+    return (
+      <div>
+        <h3>Já era meu irmão!</h3>
+        <p>Suas chances esgotaram.</p>
       </div>
     );
   }
