@@ -1,5 +1,6 @@
 import { Abas } from "./components/Abas/Abas";
 import { ListFruits } from "./components/ListFruits/ListFruits";
+import { QuestaoQuiz } from "./components/QuestaoQuiz/QuestaoQuiz";
 import { Sorteio } from "./components/Sorteio/Sorteio";
 
 export function App() {
@@ -11,7 +12,8 @@ export function App() {
       {/* <Cadastro /> */}
       {/* <ListFruits /> */}
       {/* <Sorteio /> */}
-      <Abas />
+      {/* <Abas /> */}
+      <QuestaoQuiz />
     </>
   );
 }

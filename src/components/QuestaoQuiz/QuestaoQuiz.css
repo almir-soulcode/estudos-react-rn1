@@ -1,0 +1,8 @@
+.alternativa {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.alternativa:hover {
+    font-weight: bold;
+}
