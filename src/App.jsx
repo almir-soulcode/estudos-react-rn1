@@ -1,4 +1,5 @@
 import { ListFruits } from "./components/ListFruits/ListFruits";
+import { Sorteio } from "./components/Sorteio/Sorteio";
 
 export function App() {
   return (
@@ -7,7 +8,8 @@ export function App() {
       {/* <Quadrado /> */}
       {/* <Contador /> */}
       {/* <Cadastro /> */}
-      <ListFruits />
+      {/* <ListFruits /> */}
+      <Sorteio />
     </>
   );
 }
