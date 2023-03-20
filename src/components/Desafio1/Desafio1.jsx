@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Desafio1.css";
 
 export function Desafio1() {
@@ -7,10 +7,15 @@ export function Desafio1() {
   // -1 indica que não houve calculo
   const [imc, setImc] = useState(-1);
 
-  function calcularImc() {
+  useEffect(() => {
     const resultado = peso / (altura * altura);
     setImc(resultado);
-  }
+  }, [peso, altura]);
+
+  // function calcularImc() {
+  //   const resultado = peso / (altura * altura);
+  //   setImc(resultado);
+  // }
 
   function limpar() {
     setPeso(0);
@@ -34,10 +39,10 @@ export function Desafio1() {
         value={altura}
       />
       <br />
-      <button onClick={calcularImc}>Calcular</button>
+      {/* <button onClick={calcularImc}>Calcular</button> */}
       <button onClick={limpar}>Limpar</button>
       <hr />
-      {imc > -1 && <p>O seu IMC é: {imc.toFixed(2)}</p>}
+      {(imc !== Infinity && !isNaN(imc)) && <p>O seu IMC é: {imc.toFixed(2)}</p>}
     </div>
   );
 }
